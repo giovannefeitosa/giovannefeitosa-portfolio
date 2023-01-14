@@ -1,0 +1,71 @@
+.professionalExperienceItem {
+  display: flex;
+  flex-direction: row;
+  padding: 1px 0;
+  margin: 2rem 0 2rem 0;
+
+  .imageContainer {
+    flex: 0 0 80px;
+    margin-right: .9rem;
+    padding-top: 1rem;
+    .imageDiv {
+      display: block;
+      width: 100%;
+      padding-top: 70%;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contentContainer {
+    flex: 1;
+
+    .company {
+      a {
+        color: #666;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: .9rem;
+      }
+    }
+
+    .timeString {
+      color: #666;
+      font-weight: normal;
+      text-decoration: none;
+      font-size: .9rem;
+      margin-bottom: .5rem;
+    }
+
+    .excerpt {
+      color: #bbb;
+      font-weight: normal;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    display: block;
+
+    .imageContainer {
+      flex: none;
+      display: block;
+      padding: 0;
+      margin-bottom: 1rem;
+
+      .imageDiv {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+      }
+    }
+
+    .contentContainer {
+      flex: none;
+      display: block;
+      padding: 0;
+    }
+  }
+}

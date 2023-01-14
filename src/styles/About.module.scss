@@ -1,0 +1,28 @@
+.techList {
+  padding-top: 1rem;
+  line-height: 1.8em;
+  color: #aaa;
+
+  strong {
+    color: #eee;
+  }
+}
+
+.showMoreLinkContainer {
+  padding-top: .5rem;
+  display: block;
+
+  .showMoreLink {
+    display: inline-block;
+    padding: 5px 1rem;
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.aboutDescription {
+  margin: 1rem 0;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #999;
+}

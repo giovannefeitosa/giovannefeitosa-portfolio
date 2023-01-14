@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.blogPostContainer {
+    display: block;
+    max-width: 800px;
+    margin: 3rem auto;
+    background: #efefef;
+    padding: 2rem;
+    border-radius: 10px;
+
+    p {
+        color: #111;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #111;
+    }
+
+    code {
+        padding: 1rem .8rem !important;
+        margin-bottom: .8rem;
+        display: block;
+        background: #333;
+        color: #fff;
+        padding: .2rem .5rem;
+        border-radius: 5px;
+    }
+
+    a {
+        color: #13e;
+        text-decoration: underline;
+        
+        &:hover, &:focus {
+            color: #23f;
+            text-decoration: none;
+        }
+    }      
+
+    @media (max-width: 400px) {
+        padding: 1rem 75px 2rem .5rem;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: -70px;
+    }
+
+    @media (min-width: 401px) and (max-width: 870px) {
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+}
+
+.blogPostTitle {
+    margin-bottom: .7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-primary;
+}
+
+.blogPostDate {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+

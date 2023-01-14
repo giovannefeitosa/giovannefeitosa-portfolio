@@ -1,0 +1,29 @@
+.linkRowContainer {
+    height: 40px;
+}
+
+.linkRow {
+    
+}
+
+.linkRowIcon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    color: #cdf;
+}
+
+.linkRowLabel {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    color: #cdf;
+    line-height: 20px;
+}
+
+.linkRowValue {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: underline;
+    //color: #7bf;
+}

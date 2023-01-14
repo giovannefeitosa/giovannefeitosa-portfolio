@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #060606;
+  color: #eeeeee;
+  overflow-y: scroll;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #444;
+}
+
+a {
+  color: #6bf;
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    color: #aef;
+  }
+}
