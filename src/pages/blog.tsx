@@ -9,6 +9,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 import { BasePage } from "../common/BasePage";
 import { BlogPostItem } from "../common/BlogPostItem/BlogPostItem";
 import homeStyles from "../styles/Home.module.scss";
@@ -23,7 +24,7 @@ export default function Contact() {
         style={{ alignItems: "flex-start", paddingTop: "3rem" }}
       >
         <div className={homeStyles.imageContainer}>
-          <img
+          <Image
             src="https://picsum.photos/600/800"
             alt="Giovanne Feitosa"
             className={homeStyles.homeImage}

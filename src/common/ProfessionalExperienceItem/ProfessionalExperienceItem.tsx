@@ -21,7 +21,7 @@ export default function ProfessionalExperienceItem({
       <div className={styles.contentContainer}>
         <h3 className={styles.position}>{position}</h3>
         <h4 className={styles.company}>
-          <a href={companyUrl} target="_blank" rel="external nofollow">
+          <a href={companyUrl} target="_blank" rel="external nofollow noreferrer">
             {company}
           </a>
         </h4>

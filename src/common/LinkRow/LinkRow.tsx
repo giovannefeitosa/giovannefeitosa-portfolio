@@ -6,7 +6,7 @@ export function LinkRow({ icon, label, value, href }: any) {
       <a
         href={href}
         className={styles.linkRow}
-        rel="external nofollow"
+        rel="external nofollow noreferrer"
         target="_blank"
       >
         <span className={styles.linkRowIcon}>

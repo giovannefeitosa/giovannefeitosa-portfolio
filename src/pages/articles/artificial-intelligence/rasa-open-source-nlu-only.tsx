@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import Link from "next/link";
 import { BasePage } from "../../../common/BasePage";
 import { BlogPost } from "../../../common/BlogPost/BlogPost";
 
@@ -63,9 +64,9 @@ export default function RasaOpenSourceNLUOnly() {
           the first one adds the user message to the conversation and the second
           one triggers the intent, so Rasa can provide an answer. See more in my
           other article{" "}
-          <a href="/articles/artificial-intelligence/rasa-chatbot-rest-api">
+          <Link href="/articles/artificial-intelligence/rasa-chatbot-rest-api">
             Deep dive into Rasa Chatbot's REST API
-          </a>
+          </Link>
           .
         </Typography>
 

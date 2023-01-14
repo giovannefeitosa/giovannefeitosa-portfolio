@@ -5,6 +5,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import EmailIcon from "@mui/icons-material/Email";
 import FeedIcon from "@mui/icons-material/Feed";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Link from "next/link";
 
 const theme = createTheme({
   palette: {
@@ -81,16 +82,16 @@ export function BasePage({ children, activeMenu }: any) {
         <div className={styles.childrenContainer}>{children}</div>
         <nav className={styles.rightMenuContainer}>
           <div className={styles.rightMenuItemContainer}>
-            <a href="/" className={`${styles.rightMenuItem} ${homeClass}`}>
+            <Link href="/" className={`${styles.rightMenuItem} ${homeClass}`}>
               <span className={styles.rightMenuItemLabel}>Home</span>
               <span className={styles.rightMenuItemIcon}>
                 <Home fontSize="medium" />
               </span>
-            </a>
+            </Link>
           </div>
 
           <div className={styles.rightMenuItemContainer}>
-            <a
+            <Link
               href="/about"
               className={`${styles.rightMenuItem} ${aboutClass}`}
             >
@@ -98,7 +99,7 @@ export function BasePage({ children, activeMenu }: any) {
               <span className={styles.rightMenuItemIcon}>
                 <Info fontSize="medium" />
               </span>
-            </a>
+            </Link>
           </div>
 
           {/*
@@ -116,7 +117,7 @@ export function BasePage({ children, activeMenu }: any) {
           */}
 
           <div className={styles.rightMenuItemContainer}>
-            <a
+            <Link
               href="/contact"
               className={`${styles.rightMenuItem} ${contactClass}`}
             >
@@ -124,16 +125,19 @@ export function BasePage({ children, activeMenu }: any) {
               <span className={styles.rightMenuItemIcon}>
                 <EmailIcon fontSize="medium" />
               </span>
-            </a>
+            </Link>
           </div>
 
           <div className={styles.rightMenuItemContainer}>
-            <a href="/blog" className={`${styles.rightMenuItem} ${blogClass}`}>
+            <Link
+              href="/blog"
+              className={`${styles.rightMenuItem} ${blogClass}`}
+            >
               <span className={styles.rightMenuItemLabel}>Research</span>
               <span className={styles.rightMenuItemIcon}>
                 <FeedIcon fontSize="medium" />
               </span>
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

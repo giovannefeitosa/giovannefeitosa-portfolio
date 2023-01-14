@@ -13,6 +13,7 @@ import { LinkRow } from "../common/LinkRow/LinkRow";
 import homeStyles from "../styles/Home.module.scss";
 import styles from "../styles//Portfolio.module.scss";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import Image from "next/image";
 
 const items = [
   {
@@ -39,7 +40,7 @@ export default function Portfolio() {
         style={{ alignItems: "flex-start", paddingTop: "3rem" }}
       >
         <div className={homeStyles.imageContainer}>
-          <img
+          <Image
             src="https://picsum.photos/600/800"
             alt="Giovanne Feitosa"
             className={homeStyles.homeImage}

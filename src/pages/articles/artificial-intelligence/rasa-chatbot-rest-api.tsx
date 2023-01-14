@@ -309,7 +309,7 @@ stories:
               create a new database and store what you want or{" "}
               <a
                 href="https://rasa.com/docs/rasa/tracker-stores/"
-                rel="external nofollow"
+                rel="external nofollow noreferrer"
                 target="_blank"
               >
                 configure a Tracker Store
@@ -320,7 +320,7 @@ stories:
               consider{" "}
               <a
                 href="https://rasa.com/docs/rasa-enterprise/"
-                rel="external nofollow"
+                rel="external nofollow noreferrer"
                 target="_blank"
               >
                 buying a license for Rasa X/Enterprise
