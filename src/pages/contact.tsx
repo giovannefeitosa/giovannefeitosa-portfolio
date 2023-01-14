@@ -97,7 +97,6 @@ export default function Contact() {
         <TextField
           id="inp-name"
           label="Name"
-          variant="outlined"
           style={{ width: "100%", marginTop: "1rem" }}
           value={formData.name}
           onChange={(e) => {
@@ -109,7 +108,6 @@ export default function Contact() {
         <TextField
           id="inp-message"
           label="Message"
-          variant="outlined"
           multiline
           rows={4}
           style={{ width: "100%", marginTop: "1rem" }}
@@ -160,7 +158,6 @@ export default function Contact() {
           <TextField
             id="inp-contactback"
             label="Please type a way to contact you back"
-            variant="outlined"
             style={{ width: "100%", marginTop: "1rem" }}
             value={formData.from}
             onChange={(e) => setFormData({ ...formData, from: e.target.value })}
