@@ -67,10 +67,11 @@ const theme = createTheme({
         },
       ],
     },
-    MuiOutlinedInput: {
+    MuiTextField: {
       styleOverrides: {
         root: {
           borderColor: "#333",
+          background: "#000",
         },
       },
     },
