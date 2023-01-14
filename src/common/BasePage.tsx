@@ -67,6 +67,13 @@ const theme = createTheme({
         },
       ],
     },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderColor: "#333",
+        },
+      },
+    },
   },
 });
 
