@@ -68,10 +68,20 @@ const theme = createTheme({
       ],
     },
     MuiTextField: {
+      variants: [
+        {
+          props: { variant: "outlined" },
+          style: {
+            borderColor: "#333",
+            color: "#eee",
+            background: "#000",
+          },
+        },
+      ],
       styleOverrides: {
         root: {
-          borderColor: "#333",
-          background: "#000",
+          // borderColor: "#333",
+          // background: "#000",
         },
       },
     },
