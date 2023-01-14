@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.scss";
 import { BasePage } from "../common/BasePage";
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 
 // based in
 // https://tunis-nextjs.vercel.app/home-dark
@@ -27,35 +27,41 @@ export default function Home() {
       </Head>
       <div className={styles.overlayBackground}></div>
       <main className={styles.main}>
-        <div className={styles.imageContainer}>
-          <div
-            className={styles.imageDiv}
-            style={{
-              backgroundImage: `url("https://cdn.midjourney.com/2ed02246-b9bc-4cea-8880-3f3d3533cbb7/grid_0.png")`,
-            }}
-          >
-            &nbsp;
-          </div>
-        </div>
-        <div className={`${styles.contentContainer} ${styles.home}`}>
-          <h1 className={styles.title}>I'm Giovanne Feitosa</h1>
-          <h2 className={styles.subtitle}>
-            Software Engineer <span>&amp; Researcher</span>
-          </h2>
-          <p className={styles.description}>
-            I'm a developer for more than 15y, this experience has given me the
-            opportunity to work with a wide range of technologies. My passion
-            now is to research and develop artificial intelligence.
-          </p>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6} sm={4}>
+            <div className={styles.imageContainer}>
+              <div
+                className={styles.imageDiv}
+                style={{
+                  backgroundImage: `url("https://cdn.midjourney.com/2ed02246-b9bc-4cea-8880-3f3d3533cbb7/grid_0.png")`,
+                }}
+              >
+                &nbsp;
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6} sm={8}>
+            <div className={`${styles.contentContainer} ${styles.home}`}>
+              <h1 className={styles.title}>I'm Giovanne Feitosa</h1>
+              <h2 className={styles.subtitle}>
+                Software Engineer <span>&amp; Researcher</span>
+              </h2>
+              <p className={styles.description}>
+                I'm a developer for more than 15y, this experience has given me
+                the opportunity to work with a wide range of technologies. My
+                passion now is to research and develop artificial intelligence.
+              </p>
 
-          <Button
-            variant="contained"
-            size="large"
-            onClick={() => navigateTo("/blog")}
-          >
-            See Research Articles
-          </Button>
-        </div>
+              <Button
+                variant="contained"
+                size="large"
+                onClick={() => navigateTo("/blog")}
+              >
+                See Research Articles
+              </Button>
+            </div>
+          </Grid>
+        </Grid>
       </main>
     </BasePage>
   );

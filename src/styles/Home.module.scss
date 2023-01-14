@@ -34,22 +34,33 @@
 }
 
 .imageContainer {
-  flex: 0 0 35vw;
-  align-self: flex-start;
+  //flex: 0 0 35vw;
+  //align-self: flex-start;
 
   .imageDiv {
     margin: auto;
     max-width: 400px;
-    height: 80vh;
-    min-height: 380px;
+    height: 90vh;
     display: block;
     border-radius: 30px;
     background-size: cover;
     background-position: center;
   }
 
+  @media (max-width: 600px) {
+    padding: 2rem 1rem 0rem 1rem;
+    margin-right: -70px;
+    
+    .imageDiv {
+      width: 100%;
+      max-width: 999999px;
+      height: 150px;
+      background-position-y: -10vh;
+    }
+  }
+
   @media (max-width: 799px) {
-    display: none;
+    //display: none;
   }
 }
 
@@ -62,7 +73,7 @@
 }
 
 .contentContainer {
-  flex: 1;
+  //flex: 1;
 
   &.home {
     padding: 15vh .5rem 2rem 3rem;

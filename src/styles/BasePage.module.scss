@@ -22,13 +22,16 @@
 }
 
 .rightMenuContainer {
-    padding-top: 20vh;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     width: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8vh;
 
     @media (max-width: 980px) {
         width: 80px;

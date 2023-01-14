@@ -1,6 +1,7 @@
 import {
   Button,
   CircularProgress,
+  Grid,
   Paper,
   TextField,
   Typography,
@@ -198,21 +199,27 @@ export default function Contact() {
         className={homeStyles.main}
         style={{ alignItems: "flex-start", paddingTop: "3rem" }}
       >
-        <div className={homeStyles.imageContainer}>
-          <div
-            className={homeStyles.imageDiv}
-            style={{
-              backgroundImage: `url("https://cdn.midjourney.com/557d0f1f-5fc7-467e-9054-66e96392f199/grid_0.png")`,
-            }}
-          >
-            &nbsp;
-          </div>
-        </div>
-        <div className={homeStyles.contentContainer}>
-          <h1 className={homeStyles.title}>Send me a Message</h1>
-          <h2 className={homeStyles.subtitle}>contact</h2>
-          {children}
-        </div>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={4} md={6}>
+            <div className={homeStyles.imageContainer}>
+              <div
+                className={homeStyles.imageDiv}
+                style={{
+                  backgroundImage: `url("https://cdn.midjourney.com/557d0f1f-5fc7-467e-9054-66e96392f199/grid_0.png")`,
+                }}
+              >
+                &nbsp;
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={8} md={6}>
+            <div className={homeStyles.contentContainer}>
+              <h1 className={homeStyles.title}>Send me a Message</h1>
+              <h2 className={homeStyles.subtitle}>contact</h2>
+              {children}
+            </div>
+          </Grid>
+        </Grid>
       </main>
     </BasePage>
   );

@@ -80,29 +80,30 @@ export function BasePage({ children, activeMenu }: any) {
     <ThemeProvider theme={theme}>
       <div className={styles.rootContainer}>
         <div className={styles.childrenContainer}>{children}</div>
-        <nav className={styles.rightMenuContainer}>
-          <div className={styles.rightMenuItemContainer}>
-            <Link href="/" className={`${styles.rightMenuItem} ${homeClass}`}>
-              <span className={styles.rightMenuItemLabel}>Home</span>
-              <span className={styles.rightMenuItemIcon}>
-                <Home fontSize="medium" />
-              </span>
-            </Link>
-          </div>
+        <div className={styles.rightMenuContainer}>
+          <nav className={styles.rightMenuNav}>
+            <div className={styles.rightMenuItemContainer}>
+              <Link href="/" className={`${styles.rightMenuItem} ${homeClass}`}>
+                <span className={styles.rightMenuItemLabel}>Home</span>
+                <span className={styles.rightMenuItemIcon}>
+                  <Home fontSize="medium" />
+                </span>
+              </Link>
+            </div>
 
-          <div className={styles.rightMenuItemContainer}>
-            <Link
-              href="/about"
-              className={`${styles.rightMenuItem} ${aboutClass}`}
-            >
-              <span className={styles.rightMenuItemLabel}>About me</span>
-              <span className={styles.rightMenuItemIcon}>
-                <Info fontSize="medium" />
-              </span>
-            </Link>
-          </div>
+            <div className={styles.rightMenuItemContainer}>
+              <Link
+                href="/about"
+                className={`${styles.rightMenuItem} ${aboutClass}`}
+              >
+                <span className={styles.rightMenuItemLabel}>About me</span>
+                <span className={styles.rightMenuItemIcon}>
+                  <Info fontSize="medium" />
+                </span>
+              </Link>
+            </div>
 
-          {/*
+            {/*
           <div className={styles.rightMenuItemContainer}>
             <a
               href="/portfolio"
@@ -116,30 +117,31 @@ export function BasePage({ children, activeMenu }: any) {
           </div>
           */}
 
-          <div className={styles.rightMenuItemContainer}>
-            <Link
-              href="/contact"
-              className={`${styles.rightMenuItem} ${contactClass}`}
-            >
-              <span className={styles.rightMenuItemLabel}>Contact</span>
-              <span className={styles.rightMenuItemIcon}>
-                <EmailIcon fontSize="medium" />
-              </span>
-            </Link>
-          </div>
+            <div className={styles.rightMenuItemContainer}>
+              <Link
+                href="/contact"
+                className={`${styles.rightMenuItem} ${contactClass}`}
+              >
+                <span className={styles.rightMenuItemLabel}>Contact</span>
+                <span className={styles.rightMenuItemIcon}>
+                  <EmailIcon fontSize="medium" />
+                </span>
+              </Link>
+            </div>
 
-          <div className={styles.rightMenuItemContainer}>
-            <Link
-              href="/blog"
-              className={`${styles.rightMenuItem} ${blogClass}`}
-            >
-              <span className={styles.rightMenuItemLabel}>Research</span>
-              <span className={styles.rightMenuItemIcon}>
-                <FeedIcon fontSize="medium" />
-              </span>
-            </Link>
-          </div>
-        </nav>
+            <div className={styles.rightMenuItemContainer}>
+              <Link
+                href="/blog"
+                className={`${styles.rightMenuItem} ${blogClass}`}
+              >
+                <span className={styles.rightMenuItemLabel}>Research</span>
+                <span className={styles.rightMenuItemIcon}>
+                  <FeedIcon fontSize="medium" />
+                </span>
+              </Link>
+            </div>
+          </nav>
+        </div>
       </div>
     </ThemeProvider>
   );
