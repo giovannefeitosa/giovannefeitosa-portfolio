@@ -1,5 +1,12 @@
 .linkRowContainer {
     height: 40px;
+
+    @media (max-width: 430px) {
+        margin-bottom: 1rem;
+        .linkRowValue {
+            display: block;
+        }
+    }
 }
 
 .linkRowIcon {

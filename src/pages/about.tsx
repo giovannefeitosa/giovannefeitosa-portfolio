@@ -18,7 +18,10 @@ export default function About() {
     return months;
   };
 
-  const openShowMore = useCallback(() => setShowMore(true), []);
+  const openShowMore = useCallback((e: any) => {
+    e.preventDefault();
+    setShowMore(true);
+  }, []);
 
   return (
     <BasePage activeMenu="about">
@@ -54,7 +57,7 @@ export default function About() {
                 {!showMore && (
                   <span className={styles.showMoreLinkContainer}>
                     <a
-                      href="javascript:void(0)"
+                      href=""
                       className={styles.showMoreLink}
                       onClick={openShowMore}
                     >
