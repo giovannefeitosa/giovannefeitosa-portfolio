@@ -80,8 +80,9 @@ const theme = createTheme({
       ],
       styleOverrides: {
         root: {
-          borderColor: "#333",
+          // borderColor: "#333",
           background: "#000",
+          outlineColor: "#333",
         },
       },
     },
