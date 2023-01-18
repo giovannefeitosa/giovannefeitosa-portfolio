@@ -124,8 +124,8 @@ export default function About() {
               <LinkRow
                 icon={<BusinessCenterIcon />}
                 label="Github"
-                value="github.com/lelearningai"
-                href="https://github.com/lelearningai"
+                value="github.com/giovannefeitosa"
+                href="https://github.com/giovannefeitosa"
               />
 
               <LinkRow
