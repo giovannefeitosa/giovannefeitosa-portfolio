@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import Head from "next/head";
 import Link from "next/link";
 import { BasePage } from "../../../common/BasePage";
 import { BlogPost } from "../../../common/BlogPost/BlogPost";
@@ -6,6 +7,32 @@ import { BlogPost } from "../../../common/BlogPost/BlogPost";
 export default function RasaOpenSourceNLUOnly() {
   return (
     <BasePage>
+      <Head>
+        <title>
+          The benefits of using only the NLU part of Rasa Chatbot | Research
+          Blog | GF Portfolio
+        </title>
+        <meta
+          property="og:title"
+          content="The benefits of using only the NLU part of Rasa Chatbot | Research Blog"
+        />
+        <meta
+          name="description"
+          content="If you don't have an enterprise license for Rasa Open Source, then you might realize that you can't do the second most important thing for a chatbot: analyzing the real conversations and having a way to easily improve the bot's accuracy"
+        />
+        <meta
+          property="og:description"
+          content="If you don't have an enterprise license for Rasa Open Source, then you might realize that you can't do the second most important thing for a chatbot: analyzing the real conversations and having a way to easily improve the bot's accuracy"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="canonical"
+          href="https://giovannefeitosa.com/articles/artificial-intelligence/rasa-open-source-nlu-only"
+        />
+      </Head>
       <BlogPost
         title="The benefits of using only the NLU part of Rasa Chatbot"
         date="2023-01-08"

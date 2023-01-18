@@ -9,10 +9,27 @@ import {
 import { BasePage } from "../common/BasePage";
 import homeStyles from "../styles/Home.module.scss";
 import styles from "../styles//Portfolio.module.scss";
+import Head from "next/head";
 
 export default function Portfolio() {
   return (
     <BasePage activeMenu="portfolio">
+      <Head>
+        <title>Projects | GF Portfolio</title>
+        <meta property="og:title" content="Projects | GF Portfolio" />
+        <meta
+          name="description"
+          content="Giovanne Feitosa Portfolio Projects"
+        />
+        <meta
+          property="og:description"
+          content="Giovanne Feitosa Portfolio Projects"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main
         className={homeStyles.main}
         style={{ alignItems: "flex-start", paddingTop: "3rem" }}

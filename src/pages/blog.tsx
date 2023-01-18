@@ -10,6 +10,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Head from "next/head";
 import Image from "next/image";
 import { BasePage } from "../common/BasePage";
 import { BlogPostItem } from "../common/BlogPostItem/BlogPostItem";
@@ -18,6 +19,19 @@ import homeStyles from "../styles/Home.module.scss";
 export default function Contact() {
   return (
     <BasePage activeMenu="blog">
+      <Head>
+        <title>Research Blog | GF Portfolio</title>
+        <meta property="og:title" content="Research Blog | GF Portfolio" />
+        <meta name="description" content="Check out my research articles." />
+        <meta
+          property="og:description"
+          content="Check out my research articles."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={homeStyles.overlayBackground}></div>
 
       <main

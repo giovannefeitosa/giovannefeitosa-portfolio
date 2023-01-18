@@ -1,10 +1,32 @@
 import { Typography } from "@mui/material";
+import Head from "next/head";
 import { BasePage } from "../../../common/BasePage";
 import { BlogPost } from "../../../common/BlogPost/BlogPost";
 
 export default function RasaChatbotRestAPI() {
   return (
     <BasePage>
+      <Head>
+        <title>
+          Deep dive into Rasa Chatbot REST API | Research Blog | GF Portfolio
+        </title>
+        <meta
+          property="og:title"
+          content="Deep dive into Rasa Chatbot REST API | Research Blog"
+        />
+        <meta
+          name="description"
+          content="Rasa HTTP API is a tool that enables external communication with a Rasa chatbot through a REST API."
+        />
+        <meta
+          property="og:description"
+          content="Rasa HTTP API is a tool that enables external communication with a Rasa chatbot through a REST API."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <BlogPost
         title="Deep dive into Rasa Chatbot REST API"
         date="2023-01-06"

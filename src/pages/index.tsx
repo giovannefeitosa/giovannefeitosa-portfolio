@@ -20,9 +20,19 @@ export default function Home() {
   return (
     <BasePage activeMenu="home">
       <Head>
-        <title>Giovanne Feitosa</title>
-        <meta name="description" content="Giovanne Feitosa Portfolio" />
+        <title>Giovanne Feitosa | GF Portfolio</title>
+        <meta property="og:title" content="Giovanne Feitosa | GF Portfolio" />
+        <meta
+          name="description"
+          content="Check out my professional skills and projects"
+        />
+        <meta
+          property="og:description"
+          content="Check out my professional skills and projects"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.overlayBackground}></div>

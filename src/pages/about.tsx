@@ -6,6 +6,7 @@ import styles from "../styles/About.module.scss";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ProfessionalExperienceItem from "../common/ProfessionalExperienceItem/ProfessionalExperienceItem";
 import { useCallback, useState } from "react";
+import Head from "next/head";
 
 export default function About() {
   const [showMore, setShowMore] = useState(false);
@@ -25,6 +26,16 @@ export default function About() {
 
   return (
     <BasePage activeMenu="about">
+      <Head>
+        <title>About Giovanne Feitosa | GF Portfolio</title>
+        <meta property="og:title" content="Giovanne Feitosa Portfolio" />
+        <meta name="description" content="About me page" />
+        <meta property="og:description" content="About me page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={homeStyles.overlayBackground}></div>
       <main
         className={homeStyles.main}

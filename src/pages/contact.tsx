@@ -12,6 +12,7 @@ import homeStyles from "../styles/Home.module.scss";
 import styles from "../styles/Contact.module.scss";
 import CheckIcon from "@mui/icons-material/Check";
 import { CheckCircle } from "@mui/icons-material";
+import Head from "next/head";
 
 export default function Contact() {
   const [state, setState] = useState({
@@ -191,6 +192,22 @@ export default function Contact() {
 
   return (
     <BasePage activeMenu="contact">
+      <Head>
+        <title>Contact | GF Portfolio</title>
+        <meta property="og:title" content="Contact | GF Portfolio" />
+        <meta
+          name="description"
+          content="Contact Giovanne Feitosa Software Engineer"
+        />
+        <meta
+          property="og:description"
+          content="Contact Giovanne Feitosa Software Engineer"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Giovanne Feitosa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={homeStyles.overlayBackground}></div>
       <main
         className={homeStyles.main}
