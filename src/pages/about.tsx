@@ -78,17 +78,18 @@ export default function About() {
                 )}
                 {showMore && (
                   <>
-                    <strong>Python:</strong> Flask, Pandas, Numpy, Scikit-learn,
-                    Pytorch, Matplotlib, Seaborn, Yolo, Rasa/Rasa Enterprise,
-                    Data Analysis, Data Wrangling/Preparation, Dataset
-                    augmentation.
+                    <strong>Python:</strong> Flask, Pandas, Numpy, Pytorch,
+                    Scikit-learn, Matplotlib, Plotly, Seaborn, Yolo, Rasa/Rasa
+                    Enterprise, Data Analysis, Data Wrangling/Preparation,
+                    Dataset augmentation.
                     <br />
-                    <strong>Microservices:</strong> Docker, Kubernetes, Jenkins,
-                    Github Actions, TCP, gRPC, Kafka, Redis.
+                    <strong>Microservices:</strong> Docker, Kubernetes, Rancher,
+                    Jenkins, Github Actions, TCP, gRPC, Kafka, Redis, Sockets.
                     <br />
                     <strong>AWS:</strong> EC2, S3, Lambda, SNS, DynamoDB, SQS.
                     <br />
-                    <strong>Others:</strong> Scrum, SOLID, Clean Code.
+                    <strong>Others:</strong> Scrum, SOLID, Clean Code, React,
+                    React Native.
                     <br />
                   </>
                 )}
@@ -149,48 +150,31 @@ export default function About() {
               <h2 className={homeStyles.subtitle}>professional experience</h2>
 
               <ProfessionalExperienceItem
-                image="https://fcamara.nacao.digital//wp-content/uploads/2022/08/simbolo-1.png"
-                position="Backend Software Engineer"
-                company="FCamara - Dasa"
-                timeString={`2022/dez - current · ${getMonthsFrom(
-                  new Date("2022-12-01")
+                image="https://cdn-images-1.medium.com/max/352/1*bgmLR8fLLWL49FBfbD0VEA@2x.png"
+                position="Senior Software Engineer"
+                company="Dasa"
+                timeString={`2022/mar - current · ${getMonthsFrom(
+                  new Date("2022-03-01")
                 )} months`}
-                companyUrl="https://fcamara.com/"
+                companyUrl="https://dasa.com.br/"
                 excerpt={`
-                  Working on developing Azure/AWS/Kubernetes microservices using 
-                  NodeJS/NestJS for a network of hospitals (Dasa).
-                `}
-              />
-
-              <ProfessionalExperienceItem
-                image="http://www.bkoutsourcing.com.br/wp-content/uploads/2021/07/BK.png"
-                position="Backend Software Engineer"
-                company="BK Outsourcing - Dasa"
-                timeString={`2022/mar - 2022/nov · 8 months`}
-                companyUrl="https://www.bkoutsourcing.com.br/"
-                excerpt={`
-                  Working on developing Azure/AWS/Kubernetes microservices using 
-                  NodeJS/NestJS for a network of hospitals (Dasa).
+                  Working with Azure / AWS / Kubernetes / Jenkins microservices using 
+                  NestJS (NodeJS), Kafka, SQS, Lambda functions, Azure API Management,
+                  DynamoDB, Jest (unit and e2e tests).
                 `}
               />
 
               <ProfessionalExperienceItem
                 image="https://media.licdn.com/dms/image/C4E0BAQFVNP3EZaJuqw/company-logo_200_200/0/1572099273175?e=2147483647&v=beta&t=FVob5tRHLR1soQy-BcacYH9o02eFLQclI_QgYbSyXbA"
-                position="DevOps / Machine Learning Python Developer / Tech Lead"
+                position="Entry Level DevOps and CV/ML developer"
                 company="Aquiline Drones"
                 timeString="2021/jul - 2022/jul · 1 year 1 month"
                 companyUrl="https://www.aquilinedrones.com/"
                 excerpt={`
-                  Aquiline Drones is an US startup made by a group of aerospace engineers.
-                  My intense love for artificial intelligence started here.
-                  My work was to manage our dev environment by connecting, deploying and 
-                  monitoring microservices / databases / VMs (Self hosted OpenStack).
-                  After we had our MVP, we started a new team 
-                  focused in creating machine learning models to 
-                  use in drones. We created a chatbot using Rasa, 
-                  a fruit counting computer vision model using yolov3, 
-                  a crowd counting computer vision model using yolov3, 
-                  both connected with the frontend through a python REST API.
+                  Worked in the company's CI/CD pipeline, managing all the projects.
+                  Since AD is a startup, I started working with 
+                  CV/ML development, using Python, Numpy, OpenCV, Yolo, 
+                  Rasa OS/Enterprise and Pytorch.
                 `}
               />
 
